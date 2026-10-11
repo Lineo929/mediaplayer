@@ -1,0 +1,252 @@
+/* ============================================
+   JavaFX Media Player — Blue & Black Theme
+   ============================================ */
+
+/* ---- Root ---- */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #0a0e27 0%, #000000 100%);
+    -fx-padding: 16;
+}
+
+/* ---- Header ---- */
+.header-label {
+    -fx-text-fill: #4a9eff;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 4 4;
+}
+
+.header-sub {
+    -fx-text-fill: #5a6a8a;
+    -fx-font-size: 11px;
+    -fx-padding: 0 0 0 4;
+}
+
+/* ---- Header buttons (Fullscreen, etc.) ---- */
+.header-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #a0c0ff;
+    -fx-border-color: #2a3a7a;
+    -fx-border-radius: 18;
+    -fx-background-radius: 18;
+    -fx-padding: 6 16;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.header-button:hover {
+    -fx-background-color: rgba(74, 158, 255, 0.18);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #4a9eff;
+    -fx-effect: dropshadow(gaussian, rgba(74, 158, 255, 0.5), 10, 0, 0, 0);
+}
+
+/* ---- Cards (idle 3-card layout) ---- */
+.card {
+    -fx-background-color: linear-gradient(to bottom right, #111a3a, #0a0e27);
+    -fx-background-radius: 16;
+    -fx-border-color: #1e2a5a;
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(74,158,255,0.15), 12, 0, 0, 4);
+}
+
+.card:hover {
+    -fx-border-color: #4a9eff;
+    -fx-effect: dropshadow(gaussian, rgba(74,158,255,0.4), 20, 0, 0, 6);
+}
+
+.card-title {
+    -fx-text-fill: #4a9eff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 8 0;
+}
+
+.card-icon {
+    -fx-font-size: 42px;
+    -fx-text-fill: #4a9eff;
+}
+
+/* ---- Hero (single merged card when playing) ---- */
+.hero-card {
+    -fx-background-color: linear-gradient(to bottom right, #141e4a, #06091f);
+    -fx-background-radius: 20;
+    -fx-border-color: #4a9eff;
+    -fx-border-radius: 20;
+    -fx-border-width: 2;
+    -fx-padding: 24;
+    -fx-effect: dropshadow(gaussian, rgba(74,158,255,0.5), 30, 0, 0, 8);
+}
+
+.hero-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.hero-artist {
+    -fx-text-fill: #4a9eff;
+    -fx-font-size: 14px;
+}
+
+.hero-sub {
+    -fx-text-fill: #8a9ac0;
+    -fx-font-size: 12px;
+}
+
+/* ---- MediaView ---- */
+.media-view {
+    -fx-background-color: #000000;
+    -fx-background-radius: 12;
+}
+
+/* ---- Now Playing strip ---- */
+.now-playing {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.status-label {
+    -fx-text-fill: #6a7aa0;
+    -fx-font-size: 11px;
+}
+
+/* ---- Buttons ---- */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #1e2a5a, #141e4a);
+    -fx-text-fill: #d0e0ff;
+    -fx-background-radius: 20;
+    -fx-border-color: #2a3a7a;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+    -fx-padding: 8 18;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #2a3a7a, #1e2a5a);
+    -fx-border-color: #4a9eff;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(74,158,255,0.6), 10, 0, 0, 0);
+}
+
+.button:pressed {
+    -fx-background-color: #0a0e27;
+    -fx-border-color: #4a9eff;
+}
+
+/* Primary play button — bigger and brighter */
+.play-button {
+    -fx-background-color: linear-gradient(to bottom, #4a9eff, #2a6ecc);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 24;
+    -fx-padding: 10 26;
+}
+
+.play-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #6aaaff, #3a7ecc);
+    -fx-effect: dropshadow(gaussian, rgba(74,158,255,0.9), 16, 0, 0, 0);
+}
+
+/* ---- Back button (hero card) ---- */
+.back-button {
+    -fx-background-color: linear-gradient(to bottom, #1e2a5a, #141e4a);
+    -fx-text-fill: #d0e0ff;
+    -fx-border-color: #2a3a7a;
+    -fx-border-radius: 18;
+    -fx-background-radius: 18;
+    -fx-border-width: 1;
+    -fx-padding: 6 16;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-background-color: linear-gradient(to bottom, #2a3a7a, #1e2a5a);
+    -fx-border-color: #4a9eff;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(74, 158, 255, 0.6), 10, 0, 0, 0);
+}
+
+/* ---- ListView (playlist) ---- */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #1e2a5a;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c0d0f0;
+    -fx-padding: 10 14;
+    -fx-font-size: 12px;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: rgba(74,158,255,0.15);
+    -fx-text-fill: #ffffff;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: linear-gradient(to right, #4a9eff, #2a6ecc);
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #2a3a7a;
+    -fx-background-radius: 4;
+}
+
+.list-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #4a9eff;
+}
+
+/* ---- Slider (volume) ---- */
+.slider .track {
+    -fx-background-color: #1e2a5a;
+    -fx-background-radius: 4;
+}
+
+.slider .thumb {
+    -fx-background-color: #4a9eff;
+    -fx-background-radius: 50%;
+    -fx-effect: dropshadow(gaussian, rgba(74,158,255,0.7), 8, 0, 0, 0);
+}
+
+.slider .thumb:hover {
+    -fx-background-color: #6aaaff;
+}
+
+/* ---- Labels ---- */
+.label {
+    -fx-text-fill: #a0b0d0;
+}
+
+.detail-label {
+    -fx-text-fill: #8a9ac0;
+    -fx-font-size: 12px;
+}
+
+.detail-value {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* ---- Separator ---- */
+.separator .line {
+    -fx-border-color: #1e2a5a;
+    -fx-border-width: 1 0 0 0;
+}
